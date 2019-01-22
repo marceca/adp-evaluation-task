@@ -1,10 +1,10 @@
-var https = require('https');
-var request = require('request');
+const https = require('https');
+const request = require('request');
 
 // Running the program every two seconds
 setInterval(() => {
   // URL to be used for data
-  var url = 'https://interview.adpeai.com/api/v1/get-task';
+  const url = 'https://interview.adpeai.com/api/v1/get-task';
   https.get(url, function(res){
     var body = '';
     // Appending data together
